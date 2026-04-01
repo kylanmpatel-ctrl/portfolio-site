@@ -322,7 +322,7 @@ p:last-child { margin-bottom: 0; }
   .hero { grid-template-columns: 1fr; padding-top: 7rem; text-align: center; gap: 3rem; }
   .hero-tagline { margin: 0 auto 2.5rem; }
   .hero-actions { justify-content: center; }
-  .hero-visual { order: -1; }
+  .hero-visual { order: 1; }
   .scroll-hint { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .projects-grid { grid-template-columns: 1fr; }
