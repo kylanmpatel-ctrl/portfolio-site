@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="High school student passionate about [your interest]. Building things, learning fast." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">YN</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Say hello</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Your<br /><em>Name.</em></h1>
+      <p class="hero-tagline">
+        A curious high schooler exploring the intersection of <span class="highlight">technology</span>, 
+        <span class="highlight">creativity</span>, and real-world problem solving.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="blob-ring"></div>
+      <div class="hero-card">
+        <div class="hero-card-line">Currently learning →</div>
+        <div class="hero-card-subject">Web Dev &amp; Design</div>
+        <div class="hero-card-divider"></div>
+        <div class="hero-card-line">Based in →</div>
+        <div class="hero-card-subject">Your City, State</div>
+        <div class="hero-card-divider"></div>
+        <div class="hero-card-line">Open to →</div>
+        <div class="hero-card-subject">Internships &amp; Opportunities</div>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">01 — About me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">I'm a student who builds things instead of just reading about them.</h2>
+          <p>
+            I'm a [Grade, e.g. junior] at [Your High School]. I got hooked on [your interest — coding, design, science, writing, etc.] 
+            when I realized I could actually create things that work, not just consume them. 
+          </p>
+          <p>
+            I don't have years of experience — but I have genuine curiosity, the ability to learn fast, 
+            and a habit of finishing what I start. This portfolio is proof of that.
+          </p>
+          <p>
+            Outside of school I [hobby 1, e.g. play guitar], [hobby 2, e.g. volunteer at the local food bank], 
+            and spend way too much time [hobby 3, e.g. reading about space exploration].
+          </p>
+          <a href="resume.pdf" class="btn btn-outline" target="_blank">Download résumé ↗</a>
+        </div>
+        <div class="about-skills">
+          <div class="skills-block">
+            <h3 class="skills-title">Currently learning</h3>
+            <div class="tags">
+              <span class="tag">HTML &amp; CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+          <div class="skills-block">
+            <h3 class="skills-title">Strengths</h3>
+            <div class="tags">
+              <span class="tag tag-soft">Quick learner</span>
+              <span class="tag tag-soft">Problem solver</span>
+              <span class="tag tag-soft">Detail-oriented</span>
+              <span class="tag tag-soft">Collaborative</span>
+            </div>
+          </div>
+          <div class="skills-block">
+            <h3 class="skills-title">Interested in</h3>
+            <div class="tags">
+              <span class="tag tag-accent">Computer Science</span>
+              <span class="tag tag-accent">Design</span>
+              <span class="tag tag-accent">Entrepreneurship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-label">02 — Experience</div>
+      <h2 class="section-heading">Where I've shown up<br /><em>and contributed.</em></h2>
+      <p class="section-sub">
+        I may not have a long résumé — but every entry below taught me something real.
+      </p>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2024 — Present</div>
+          <div class="timeline-content">
+            <div class="timeline-org">Your High School — Computer Science Club</div>
+            <h3 class="timeline-role">Member &amp; Project Lead</h3>
+            <p class="timeline-desc">
+              Collaborated with peers on a [describe a project, e.g. school app concept]. 
+              Led a 3-person team for our spring hackathon entry, where we built a 
+              [what you built] and placed [result, or just "learned an enormous amount"].
+            </p>
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag tag-sm">Teamwork</span>
+              <span class="tag tag-sm">Project management</span>
+              <span class="tag tag-sm">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Summer 2024</div>
+          <div class="timeline-content">
+            <div class="timeline-org">Local Library / Community Organization</div>
+            <h3 class="timeline-role">Volunteer</h3>
+            <p class="timeline-desc">
+              Helped organize [event or program]. Created [what you made, e.g. flyers, a spreadsheet system, a social media post]. 
+              Showed up every week — consistency over flash.
+            </p>
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag tag-sm">Communication</span>
+              <span class="tag tag-sm">Reliability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 — Present</div>
+          <div class="timeline-content">
+            <div class="timeline-org">Self-directed</div>
+            <h3 class="timeline-role">Independent Learner</h3>
+            <p class="timeline-desc">
+              Completed [course name, e.g. CS50x on edX, freeCodeCamp Responsive Web Design Certification]. 
+              Built small projects to apply what I learned — see the Projects section below.
+            </p>
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag tag-sm">Self-motivation</span>
+              <span class="tag tag-sm">HTML/CSS</span>
+              <span class="tag tag-sm">Python basics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more entries as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-heading">Things I've actually built.</h2>
+      <p class="section-sub">
+        Small projects, real code. Each one started with a question: <em>can I make this work?</em>
+      </p>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured" data-reveal>
+          <div class="project-top">
+            <span class="project-status">Featured</span>
+            <div class="project-links">
+              <a href="#" target="_blank" class="icon-link" aria-label="View live">↗</a>
+              <a href="#" target="_blank" class="icon-link" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Project Name Here</h3>
+          <p class="project-desc">
+            A [1–2 sentence description]. I built this because [honest reason — curiosity, a class assignment you took further, a problem you wanted to solve]. 
+            The hardest part was [what challenged you], and here's what I learned from it.
+          </p>
+          <div class="project-tech">
+            <span class="tag tag-sm">HTML</span>
+            <span class="tag tag-sm">CSS</span>
+            <span class="tag tag-sm">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-top">
+            <span class="project-status project-status--school">School project</span>
+            <div class="project-links">
+              <a href="#" target="_blank" class="icon-link" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Another Project</h3>
+          <p class="project-desc">
+            Describe this project honestly. You don't need to oversell — a simple, 
+            well-explained project shows more than a vague impressive-sounding one.
+          </p>
+          <div class="project-tech">
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">Data analysis</span>
+          </div>
+        </div>
+
+        <div class="project-card project-card--wip" data-reveal>
+          <div class="project-top">
+            <span class="project-status project-status--wip">In progress</span>
+          </div>
+          <h3 class="project-title">This Portfolio</h3>
+          <p class="project-desc">
+            Built from scratch using HTML, CSS, and vanilla JavaScript. 
+            First time I'd thought seriously about design, performance, and deployment. 
+            Deployed on Vercel from a GitHub repo.
+          </p>
+          <div class="project-tech">
+            <span class="tag tag-sm">HTML/CSS</span>
+            <span class="tag tag-sm">JavaScript</span>
+            <span class="tag tag-sm">Vercel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="contact-heading">Let's talk.</h2>
+      <p class="contact-sub">
+        Whether you're a recruiter, a college admissions reader, or just someone curious about my work — 
+        I'd genuinely love to hear from you.
+      </p>
+
+      <div class="contact-grid">
+        <a href="mailto:you@email.com" class="contact-card">
+          <div class="contact-icon">✉</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">you@email.com</div>
+        </a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" class="contact-card">
+          <div class="contact-icon">in</div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">linkedin.com/in/yourhandle</div>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">github.com/yourusername</div>
+        </a>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send message →</button>
+          <p class="form-note" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Your Name</span>
+      <span class="footer-copy">Designed &amp; built by me · 2025</span>
+      <a href="#home" class="footer-back">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
