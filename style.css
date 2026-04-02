@@ -165,8 +165,8 @@ p:last-child { margin-bottom: 0; }
   transition: opacity 0.2s ease !important;
 }
 .nav-cta:hover { opacity: 0.8; }
-.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
-.hamburger span { display: block; width: 22px; height: 1px; background: var(--white); transition: all var(--transition); }
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; z-index: 300; position: relative; -webkit-tap-highlight-color: transparent; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--white); transition: all var(--transition); border-radius: 2px; }
 
 .mobile-menu {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -347,10 +347,10 @@ p:last-child { margin-bottom: 0; }
   .form-row { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .nav { padding: 1rem 1.5rem; }
+  .nav { padding: 1rem 1.5rem; z-index: 100; }
   .container { padding: 0 1.5rem; }
   .hero { padding: 6rem 1.5rem 3rem; }
   .about, .experience, .projects, .contact { padding: 5rem 0; }
