@@ -62,11 +62,13 @@ p:last-child { margin-bottom: 0; }
 .section-heading {
   font-family: var(--serif);
   font-size: clamp(2.2rem, 4.5vw, 3.2rem);
-  line-height: 1.1;
+  line-height: 1.3;
   font-weight: 700;
   margin-bottom: 1.25rem;
   color: var(--white);
   letter-spacing: -0.02em;
+  overflow: visible;
+  padding-bottom: 0.15em;
 }
 
 .section-heading em {
