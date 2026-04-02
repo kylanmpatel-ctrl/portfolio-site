@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kylan Patel — Portfolio</title>
-  <meta name="description" content="High school student passionate about [your interest]. Building things, learning fast." />
+  <meta name="description" content="Kylan Patel — Junior at Saint Mary's High School, Medford Oregon. Interested in business and finance." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact" class="nav-cta">Say hello</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -28,7 +28,7 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobile-menu">
-    <button class="mobile-close" id="mobile-close">✕</button>
+    <button class="mobile-close" id="mobile-close">&#x2715;</button>
     <a href="#about" class="mobile-link">About</a>
     <a href="#experience" class="mobile-link">Experience</a>
     <a href="#projects" class="mobile-link">Projects</a>
@@ -41,7 +41,7 @@
       <p class="hero-eyebrow">Hello, I'm</p>
       <h1 class="hero-name">Kylan<br /><em>Patel.</em></h1>
       <p class="hero-tagline">
-        A high schooler who's genuinely into <span class="highlight">business</span>, 
+        A high schooler who's genuinely into <span class="highlight">business</span>,
         <span class="highlight">finance</span>, and figuring out how the real world actually works.
       </p>
       <div class="hero-actions">
@@ -52,17 +52,17 @@
     <div class="hero-visual">
       <div class="blob-ring"></div>
       <div class="hero-card">
-        <div class="hero-card-line">Currently learning →</div>
+        <div class="hero-card-line">Currently learning</div>
         <div class="hero-card-subject">Finance &amp; Business</div>
         <div class="hero-card-divider"></div>
-        <div class="hero-card-line">Based in →</div>
+        <div class="hero-card-line">Based in</div>
         <div class="hero-card-subject">Medford, Oregon</div>
         <div class="hero-card-divider"></div>
-        <div class="hero-card-line">Open to →</div>
+        <div class="hero-card-line">Open to</div>
         <div class="hero-card-subject">Internships &amp; Opportunities</div>
       </div>
     </div>
-    <div class="scroll-hint">scroll ↓</div>
+    <div class="scroll-hint">scroll down</div>
   </section>
 
   <!-- ABOUT -->
@@ -81,7 +81,6 @@
           <p>
             Outside of school I'm really into sports. I play and watch golf, basketball, and baseball mostly with my family. Sports have honestly taught me a lot about putting in the work and staying focused even when things aren't going your way.
           </p>
-
         </div>
         <div class="about-skills">
           <div class="skills-block">
@@ -123,9 +122,7 @@
       <p class="section-sub">
         I'm still early in my journey but every experience below taught me something I actually use.
       </p>
-
       <div class="timeline">
-
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-date">2025 to Present</div>
@@ -155,9 +152,7 @@
       <p class="section-sub" style="color:rgba(255,255,255,0.55);">
         Small projects, real work. Each one started with me asking if I could actually make it work.
       </p>
-
       <div class="projects-grid">
-
         <div class="project-card featured">
           <div class="project-top">
             <span class="project-status project-status--wip">In progress</span>
@@ -174,8 +169,6 @@
             <span class="tag tag-sm">Vercel</span>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
@@ -188,12 +181,11 @@
       <p class="contact-sub">
         Whether you're a recruiter, a college admissions reader, or just someone curious about what I'm working on, I'd love to hear from you.
       </p>
-
       <div class="contact-grid">
         <a href="https://mail.google.com/mail/?view=cm&to=Kylanmpatel@gmail.com" target="_blank" class="contact-card">
-          <div class="contact-icon">✉</div>
+          <div class="contact-icon">&#9993;</div>
           <div class="contact-label">Email</div>
-          <div class="contact-value"><span class="__cf_email__" data-cfemail="4e0537222f20233e2f3a2b220e29232f2722602d2123">[email&#160;protected]</span></div>
+          <div class="contact-value">Kylanmpatel&#64;gmail.com</div>
         </a>
         <a href="https://www.linkedin.com/in/kylan-patel-4085723bb" target="_blank" class="contact-card">
           <div class="contact-icon">in</div>
@@ -201,21 +193,38 @@
           <div class="contact-value">linkedin.com/in/kylan-patel</div>
         </a>
       </div>
-
       <div class="contact-form-wrap">
         <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpqojzvq" method="POST">
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your name</label>
-              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+              <label for="fname">Your name</label>
+              <input type="text" id="fname" name="name" placeholder="Jane Smith" required />
             </div>
             <div class="form-group">
-              <label for="email">Your email</label>
-              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+              <label for="femail">Your email</label>
+              <input type="email" id="femail" name="email" placeholder="jane@example.com" required />
             </div>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
           </div>
-          <button type="submit" class="btn btn-pri
+          <button type="submit" class="btn btn-primary btn-full">Send message</button>
+          <p class="form-note" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Kylan Patel</span>
+      <span class="footer-copy">Designed &amp; built by me &middot; 2025</span>
+      <a href="#home" class="footer-back">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
