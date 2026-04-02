@@ -119,8 +119,12 @@ const sectionObserver = new IntersectionObserver(
 sections.forEach(s => sectionObserver.observe(s));
 
 // --- CONTACT FORM ---
-// This uses Formspree — free for basic use.
-// Sign up at formspree.io and replace YOUR_FORM_ID below.
+// HOW TO MAKE THIS SEND TO YOUR EMAIL:
+// 1. Go to https://formspree.io and sign up for free
+// 2. Click "New Form", name it anything, and set the email to Kylanmpatel@gmail.com
+// 3. Copy your Form ID (looks like "xpwzgkab") and paste it below
+const FORMSPREE_ID = 'YOUR_FORM_ID'; // <-- replace this
+
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 
@@ -128,17 +132,15 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const data = new FormData(form);
 
-  // OPTION 1: Formspree (recommended, free tier)
-  // Replace YOUR_FORM_ID with the ID from formspree.io
-  const FORMSPREE_ID = 'YOUR_FORM_ID';
-
   if (FORMSPREE_ID === 'YOUR_FORM_ID') {
-    // Placeholder behavior before Formspree is set up
-    status.textContent = '✓ Message received! (Set up Formspree to make this live)';
-    status.className = 'form-note success';
-    form.reset();
+    status.textContent = 'Set up Formspree first — see instructions in script.js';
+    status.className = 'form-note error';
     return;
   }
+
+  const btn = form.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
 
   try {
     const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
@@ -148,14 +150,18 @@ form.addEventListener('submit', async (e) => {
     });
 
     if (res.ok) {
-      status.textContent = '✓ Sent! I\'ll get back to you soon.';
+      status.textContent = '✓ Message sent! I will get back to you soon.';
       status.className = 'form-note success';
       form.reset();
+      btn.textContent = 'Send message →';
+      btn.disabled = false;
     } else {
       throw new Error('Server error');
     }
   } catch {
-    status.textContent = '✗ Something went wrong. Try emailing me directly.';
+    status.textContent = '✗ Something went wrong. Email me directly at Kylanmpatel@gmail.com';
     status.className = 'form-note error';
+    btn.textContent = 'Send message →';
+    btn.disabled = false;
   }
 });
